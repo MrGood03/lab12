@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "5135c107-1bcc-42bf-87a9-4d09676aa271",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30353139"
+	},
+	"item": [
+		{
+			"name": "plus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 2\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/1+1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"1+1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "minus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/1-1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"1-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 4\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/2*2",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"2*2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Division",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 3\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/6:2",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"6:2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sqrt",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 2.0\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/sqrt4",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"sqrt4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Degree",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 4\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/2**2",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"2**2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Integer division",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/3::2",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"3::2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "The remainder of the division",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/default/3!2",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"default",
+						"3!2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.8414709848078965\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/sin1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"sin1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.5403023058681398\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/cos1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"cos1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tg",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1.5574077246549023\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/tg1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"tg1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ctg",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 0.3731493269728801\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/ctg1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"ctg1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "asin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1.5707963267948966\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/asin1",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"asin1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "acos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"= 1.0471975511965979\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://terehoffeg27.pythonanywhere.com/trig/acos0.5",
+					"protocol": "https",
+					"host": [
+						"terehoffeg27",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"trig",
+						"acos0.5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
